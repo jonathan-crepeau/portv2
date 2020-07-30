@@ -1,6 +1,15 @@
-const globalNavBtn = document.getElementById("four");
+const navBtn = document.querySelector("#four");
+const globalNav = document.querySelector("#global-nav");
 
-globalNavBtn.addEventListener("click", function() {
-  console.log('clicked!');
-  document.getElementById("global-nav").classList.toggle("show");
+navBtn.addEventListener('click', () => {
+  console.log('You clicked it, bitch');
+
+  showGlobalNav = !showGlobalNav;
+  if (showGlobalNav) {
+    globalNav.style.display = "block";
+  } else {
+    globalNav.style.display = "none";
+  }
 });
+
+let showGlobalNav = false;
