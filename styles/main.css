@@ -8,12 +8,7 @@ body {
 }
 
 #grid-container {
-
   background-image: linear-gradient(plum, palegoldenrod);
-
-
-  /* background-image: -webkit-gradient(linear, left top, right top, from(#072142), color-stop(42%, #8c2b7a), to(#ff4d5a)); */
-
   height: 111vh;
   width: 100vw;
   display: grid;
@@ -44,10 +39,15 @@ body {
 #global-nav {
   display: none;
   position: fixed;
-  background-color: red;
+  background:red;
   z-index: 0;
   width: 100%;
   height: 100vh;
+  transition: transform 3s linear;
+}
+
+.global-transition {
+  transform: translateX(100px);
 }
 
 #global-nav a {

@@ -6,9 +6,11 @@ navBtn.addEventListener('click', () => {
 
   showGlobalNav = !showGlobalNav;
   if (showGlobalNav) {
+    globalNav.classList.add("global-transition");
     globalNav.style.display = "block";
   } else {
     globalNav.style.display = "none";
+    globalNav.classList.remove("global-transition");
   }
 });
 
